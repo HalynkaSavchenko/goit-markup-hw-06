@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- ======HEADER======= -->
     <header class="header">
      <div class="header-page container">
       <nav class="nav">
@@ -33,7 +33,7 @@
           <use href="./images/icons.svg#icon-burger"></use>
         </svg>
       </button>
-      <address >
+      <address class="list-contact" >
         <ul class="list-contact list">
           <li class="contact">
             <a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a>
@@ -46,15 +46,19 @@
     </div>
     </header>
     <main>
-      <!-- HERO-SECTION  -->
-      <!-- <section class="hero-section">
+      <!-- ======HEADER======= -->
+
+      <!--===HERO-SECTION===  -->
+      <section class="hero-section">
       <div class="container">
         <h1 class="page-title">Effective Solutions for Your Business</h1>
         <button type="button" class="button-text">Order Service</button>
       </div>
-      </section> -->
-      <!-- FEATURES SECTION-->
-      <!-- <section class="section">
+      </section>
+       <!-- ===HERO-SECTION===  -->
+
+      <!-- =====FEATURES SECTION=====-->
+      <section class="section">
       <div class="container">
         <h2 class="section-title visually-hidden">Our features</h2>
         <ul class="features-list list">
@@ -101,14 +105,20 @@
           </li>
         </ul>
       </div>
-      </section> -->
-      <!-- TEAM SECTION -->
-      <!-- <section class="team-section section">
+      </section>
+       <!-- =====FEATURES SECTION=====-->
+
+      <!-- ========TEAM SECTION======== -->
+      <section class="team-section section">
       <div class="team container">
         <h2 class="team-title section-title">Our Team</h2>
         <ul class="team-list list">
           <li class="team-item">
-            <img src="./images/1.jpg" alt=" Photo Product Designer" width="264" height="260" class="team-item-img"/>
+            <img class="team-item-img"
+            srcset="./images/product-designer@2x.jpg 2x" 
+            src="./images/product-designer.jpg" 
+            alt="Photo Product Designer" 
+            width="264" height="260" />
             <div class="name-major">
               <h3 class="list-titles name">Mark Guerrero</h3>
               <p class="page-text major">Product Designer</p>
@@ -145,7 +155,11 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/2.jpg" alt="Photo Frontend Developer" width="264" height="260" class="team-item-img"/>
+            <img class="team-item-img"
+             srcset="./images/frontend-developer@2x.jpg 2x" 
+             src="./images/frontend-developer.jpg" 
+             alt="Photo Frontend Developer"
+              width="264" height="260"/>
             <div class="name-major">
               <h3 class="list-titles name">Tom Ford</h3>
               <p class="page-text major">Frontend Developer</p>
@@ -182,7 +196,11 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/3.jpg" alt="Photo Marketing" width="264" height="260" class="team-item-img"/>
+            <img class="team-item-img"
+            srcset="./images/marketing@2x.jpg 2x"
+            src="./images/marketing.jpg" 
+            alt="Photo Marketing" 
+            width="264" height="260"/>
             <div class="name-major">
               <h3 class="list-titles name">Camila Garcia</h3>
               <p class="page-text major">Marketing</p>
@@ -219,7 +237,11 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/4.jpg" alt="Photo UI Designer" width="264" height="260" class="team-item-img"/>
+            <img class="team-item-img"
+            srcset="./images/ui-designer@2x.jpg 2x"
+            src="./images/ui-designer.jpg" 
+            alt="Photo UI Designer" 
+            width="264" height="260"/>
             <div class="name-major">
               <h3 class="list-titles name">Daniel Wilson</h3>
               <p class="page-text major">UI Designer</p>
@@ -257,7 +279,7 @@
           </li>
         </ul>
       </div>
-      </section> -->
+      </section>
       <!-- PORTFOLIO SECTION -->
       <!-- <section class="portfolio-section section">
       <div class="portfolio container">
@@ -475,6 +497,70 @@
             </form>
           </div>
         </div> -->
+        <div class="mobile-menu">
+          <div class="container mobile-menu-container">
+            <button class="mobile-menu-close-btn" type="button">
+              <svg class="modal-close-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="nav-mobile">
+              <ul class="nav-list-mobile list">
+                <li class="nav-item-mobile">
+                  <a href="./index.html"  class="nav-link-mobile studio-link-mobile link">Studio</a>
+                </li>
+                <li class="nav-item-mobile">
+                  <a href="" class="nav-link-mobile link">Portfolio</a>
+                </li>
+                <li class="nav-item-mobile">
+                  <a href="" class="nav-link-mobile link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="mobile-address">
+              <ul class="list-contact-mobile-menu list">
+                <li class="contact-mobile">
+                  <a href="tel:+110001111111" class="contact-link-mobile-menu contact-link-mobile-menu-tel link">+11 (000) 111-11-11</a>
+                </li>
+                <li class="contact-mobile">
+                  <a href="mailto:info@devstudio.com" class="contact-link-mobile-menu link">info@devstudio.com</a>
+                </li>
+              </ul>
+            </address>
+            <div class="mobile-menu-social">
+              <ul class="social-list list">
+                <li class="social-list-item">
+                  <a href="#" class="social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="#" class="social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="#" class="social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="#" class="social-list-link">
+                    <svg class="social-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
     </body>
   </html>
   
