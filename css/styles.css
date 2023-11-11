@@ -298,7 +298,7 @@ button {
             letter-spacing: 0.04em;
             word-wrap: break-word;
             display: block;
-            width: 169px;
+            min-width: 169px;
             height: 56px;
             border: none;
             cursor: pointer;
