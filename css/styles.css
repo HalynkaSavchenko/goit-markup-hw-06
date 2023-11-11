@@ -47,8 +47,8 @@ button {
 }
 
 .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
 
@@ -115,7 +115,7 @@ button {
 
         @media screen and (min-width: 480px) {
             .container {
-              width: 352px;
+              width: 320px;
               margin-left: auto;
               margin-right: auto;
             }
@@ -130,8 +130,7 @@ button {
         @media screen and (min-width: 1158px) {
             .container {
               width: 1158px;
-            padding-left: 0px;
-           padding-right: 0px;}
+            }
             }
         /*=========== GLOBAL STYLES=========== */
 
@@ -188,6 +187,7 @@ button {
         @media screen and (min-width: 768px) {
             .header {
                 height: 72px;
+                display: flex;
                        }
             .mobile-menu {
               display: none;
@@ -235,7 +235,7 @@ button {
                 background: var(--OCEAN, #404BBF);
                 position: absolute;
                 left: 0;
-                bottom: 4px;
+                bottom: -2px;
                 }
             .list-contact {
               display: flex;
@@ -457,10 +457,6 @@ button {
             flex-wrap: wrap;
         }
         
-        .features-item .list-titles {
-            margin-bottom: 8px;
-            text-align: center;
-        }
         .features-item {
             width: 288px;
             margin-left: auto;
@@ -472,9 +468,9 @@ button {
          /*=========== FUTURE TABLET STYLES=========== */
 
          @media screen and (min-width: 768px) {
-            .features-item .list-titles {
-                text-align: left;
-            }
+         .features-titles {
+            text-align: left;
+         }
          .features-list {
             display: flex;
             flex-direction: row;
@@ -542,16 +538,20 @@ button {
 
          
          /*=========== TEAM MOBILE STYLES=========== */
-         .team-section {
-            background-color: #F4F4FD;
-            }
-
+         @media screen and (max-width: 767px) {
             .team-list {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 gap: 72px;
+                align-content: center;
             }
+
+         }
+         .team-section {
+            background-color: #F4F4FD;
+            }
+
             
             .team-title {
             margin-bottom: 72px;
@@ -562,8 +562,6 @@ button {
             
             .team-item {
                 width: 264px;
-                margin-left: auto;
-                margin-right: auto;
             background-color: #FFFFFF ;
             border-radius: 0px 0px 4px 4px;
             background: var(--WHITE, #FFF);
@@ -595,12 +593,10 @@ button {
          @media screen and (min-width: 768px) {
             .team-list {
                 display: flex;
-                flex-direction: row;
                 flex-wrap: wrap;
                row-gap: 64px;
                column-gap: 24px;
-               padding-left: 92px;
-               padding-right: 92px;
+               justify-content: center;
             }
 
          }
@@ -900,6 +896,10 @@ padding-top: 96px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    gap: 0;
+}
+.footer-second-block .social-list {
+    gap: 16px;
 }
 .footer-input {
 width: 264px;
@@ -907,10 +907,10 @@ width: 264px;
 .footer-first-second-block {
     gap: 120px;
 }
-.footer-container {
-    gap: 96px;
-
+.footer-third-block {
+    margin-left: auto;
 }
+
 }
          /*=========== FOOTER DESKTOP STYLES=========== */
 
